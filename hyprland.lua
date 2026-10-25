@@ -35,7 +35,7 @@ hl.monitor({
 ---------------------
 
 -- Set programs that you use
-local terminal = "alacritty"
+local terminal = "kitty"
 local fileManager = "thunar"
 local menu = "hyprlauncher"
 
@@ -212,6 +212,8 @@ hl.config({
 
 hl.config({
     misc = {
+        -- Allow transient missed pings before opening a focus-taking hang dialog.
+        anr_missed_pings = 10,
         force_default_wallpaper = -1,    -- Set to 0 or 1 to disable the anime mascot wallpapers
         disable_hyprland_logo   = false, -- If true disables the random hyprland logo / anime girl background. :(
     },
